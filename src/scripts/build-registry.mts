@@ -569,6 +569,10 @@ async function buildThemes() {
     --accent-foreground: <%- colors.light["accent-foreground"] %>;
     --destructive: <%- colors.light["destructive"] %>;
     --destructive-foreground: <%- colors.light["destructive-foreground"] %>;
+    --success: <%- colors.light["success"] %>;
+    --success-foreground: <%- colors.light["success-foreground"] %>;
+    --attention: <%- colors.light["attention"] %>;
+    --attention-foreground: <%- colors.light["attention-foreground"] %>;
     --border: <%- colors.light["border"] %>;
     --input: <%- colors.light["input"] %>;
     --ring: <%- colors.light["ring"] %>;
@@ -597,6 +601,10 @@ async function buildThemes() {
     --accent-foreground: <%- colors.dark["accent-foreground"] %>;
     --destructive: <%- colors.dark["destructive"] %>;
     --destructive-foreground: <%- colors.dark["destructive-foreground"] %>;
+    --success: <%- colors.dark["success"] %>;
+    --success-foreground: <%- colors.dark["success-foreground"] %>;
+    --attention: <%- colors.dark["attention"] %>;
+    --attention-foreground: <%- colors.dark["attention-foreground"] %>;
     --border: <%- colors.dark["border"] %>;
     --input: <%- colors.dark["input"] %>;
     --ring: <%- colors.dark["ring"] %>;
@@ -695,6 +703,12 @@ async function buildThemes() {
   --destructive: <%- colors.light["destructive"] %>;
   --destructive-foreground: <%- colors.light["destructive-foreground"] %>;
 
+  --success: <%- colors.light["success"] %>;
+  --success-foreground: <%- colors.light["success-foreground"] %>;
+
+  --attention: <%- colors.light["attention"] %>;
+  --attention-foreground: <%- colors.light["attention-foreground"] %>;
+
   --ring: <%- colors.light["ring"] %>;
 
   --radius: <%- colors.light["radius"] %>;
@@ -727,6 +741,12 @@ async function buildThemes() {
 
   --destructive: <%- colors.dark["destructive"] %>;
   --destructive-foreground: <%- colors.dark["destructive-foreground"] %>;
+
+  --success: <%- colors.dark["success"] %>;
+  --success-foreground: <%- colors.dark["success-foreground"] %>;
+
+  --attention: <%- colors.dark["attention"] %>;
+  --attention-foreground: <%- colors.dark["attention-foreground"] %>;
 
   --ring: <%- colors.dark["ring"] %>;
 }`;

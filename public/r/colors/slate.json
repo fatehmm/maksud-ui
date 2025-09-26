@@ -17,6 +17,10 @@
       "accent-foreground": "slate-900",
       "destructive": "red-500",
       "destructive-foreground": "slate-50",
+      "success": "green-500",
+      "success-foreground": "white",
+      "attention": "orange-500",
+      "attention-foreground": "white",
       "border": "slate-200",
       "input": "slate-200",
       "ring": "slate-950"
@@ -38,6 +42,10 @@
       "accent-foreground": "slate-50",
       "destructive": "red-900",
       "destructive-foreground": "slate-50",
+      "success": "green-600",
+      "success-foreground": "white",
+      "attention": "orange-600",
+      "attention-foreground": "white",
       "border": "slate-800",
       "input": "slate-800",
       "ring": "slate-300"
@@ -61,6 +69,10 @@
       "accent-foreground": "222.2 47.4% 11.2%",
       "destructive": "0 84.2% 60.2%",
       "destructive-foreground": "210 40% 98%",
+      "success": "142.1 70.6% 45.3%",
+      "success-foreground": "0 0% 100%",
+      "attention": "24.6 95% 53.1%",
+      "attention-foreground": "0 0% 100%",
       "border": "214.3 31.8% 91.4%",
       "input": "214.3 31.8% 91.4%",
       "ring": "222.2 84% 4.9%",
@@ -87,6 +99,10 @@
       "accent-foreground": "210 40% 98%",
       "destructive": "0 62.8% 30.6%",
       "destructive-foreground": "210 40% 98%",
+      "success": "142.1 76.2% 36.3%",
+      "success-foreground": "0 0% 100%",
+      "attention": "20.5 90.2% 48.2%",
+      "attention-foreground": "0 0% 100%",
       "border": "217.2 32.6% 17.5%",
       "input": "217.2 32.6% 17.5%",
       "ring": "212.7 26.8% 83.9%",
@@ -98,5 +114,5 @@
     }
   },
   "inlineColorsTemplate": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n  ",
-  "cssVarsTemplate": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer base {\n  :root {\n    --background: ;\n    --foreground: ;\n    --card: ;\n    --card-foreground: ;\n    --popover: ;\n    --popover-foreground: ;\n    --primary: ;\n    --primary-foreground: ;\n    --secondary: ;\n    --secondary-foreground: ;\n    --muted: ;\n    --muted-foreground: ;\n    --accent: ;\n    --accent-foreground: ;\n    --destructive: ;\n    --destructive-foreground: ;\n    --border: ;\n    --input: ;\n    --ring: ;\n    --radius: 0.5rem;\n    --chart-1: ;\n    --chart-2: ;\n    --chart-3: ;\n    --chart-4: ;\n    --chart-5: ;\n  }\n\n  .dark {\n    --background: ;\n    --foreground: ;\n    --card: ;\n    --card-foreground: ;\n    --popover: ;\n    --popover-foreground: ;\n    --primary: ;\n    --primary-foreground: ;\n    --secondary: ;\n    --secondary-foreground: ;\n    --muted: ;\n    --muted-foreground: ;\n    --accent: ;\n    --accent-foreground: ;\n    --destructive: ;\n    --destructive-foreground: ;\n    --border: ;\n    --input: ;\n    --ring: ;\n    --chart-1: ;\n    --chart-2: ;\n    --chart-3: ;\n    --chart-4: ;\n    --chart-5: ;\n  }\n}\n\n@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}"
+  "cssVarsTemplate": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer base {\n  :root {\n    --background: ;\n    --foreground: ;\n    --card: ;\n    --card-foreground: ;\n    --popover: ;\n    --popover-foreground: ;\n    --primary: ;\n    --primary-foreground: ;\n    --secondary: ;\n    --secondary-foreground: ;\n    --muted: ;\n    --muted-foreground: ;\n    --accent: ;\n    --accent-foreground: ;\n    --destructive: ;\n    --destructive-foreground: ;\n    --success: ;\n    --success-foreground: ;\n    --attention: ;\n    --attention-foreground: ;\n    --border: ;\n    --input: ;\n    --ring: ;\n    --radius: 0.5rem;\n    --chart-1: ;\n    --chart-2: ;\n    --chart-3: ;\n    --chart-4: ;\n    --chart-5: ;\n  }\n\n  .dark {\n    --background: ;\n    --foreground: ;\n    --card: ;\n    --card-foreground: ;\n    --popover: ;\n    --popover-foreground: ;\n    --primary: ;\n    --primary-foreground: ;\n    --secondary: ;\n    --secondary-foreground: ;\n    --muted: ;\n    --muted-foreground: ;\n    --accent: ;\n    --accent-foreground: ;\n    --destructive: ;\n    --destructive-foreground: ;\n    --success: ;\n    --success-foreground: ;\n    --attention: ;\n    --attention-foreground: ;\n    --border: ;\n    --input: ;\n    --ring: ;\n    --chart-1: ;\n    --chart-2: ;\n    --chart-3: ;\n    --chart-4: ;\n    --chart-5: ;\n  }\n}\n\n@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}"
 }
