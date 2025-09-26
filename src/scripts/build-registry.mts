@@ -61,7 +61,7 @@ export const Index: Record<string, any> = {
     // Build style index.
     for (const item of registry.items) {
       const resolveFiles = item.files?.map(
-        (file) => `registry/${style.name}/${typeof file === 'string' ? file : file.path}`
+        (file) => `src/registry/${style.name}/${typeof file === 'string' ? file : file.path}`
       );
       if (!resolveFiles) {
         continue;
@@ -216,7 +216,7 @@ export const Index: Record<string, any> = {
             const targetFile = file.replace(item.name, `${chunkName}`);
             const targetFilePath = path.join(
               cwd(),
-              `registry/${style.name}/${type}/${chunkName}.tsx`
+              `src/registry/${style.name}/${type}/${chunkName}.tsx`
             );
 
             // Write component file.
@@ -278,7 +278,9 @@ export const Index: Record<string, any> = {
       type: "${item.type}",
       registryDependencies: ${JSON.stringify(item.registryDependencies)},
       files: [${item.files?.map((file) => {
-        const filePath = `registry/${style.name}/${typeof file === 'string' ? file : file.path}`;
+        const filePath = `src/registry/${style.name}/${
+          typeof file === 'string' ? file : file.path
+        }`;
         const resolvedFilePath = path.resolve(filePath);
         return typeof file === 'string'
           ? `"${resolvedFilePath}"`
@@ -381,7 +383,7 @@ async function buildStyles(registry: Registry) {
             let content: string;
             try {
               content = await fs.readFile(
-                path.join(process.cwd(), 'registry', style.name, file.path),
+                path.join(process.cwd(), 'src/registry', style.name, file.path),
                 'utf8'
               );
 
